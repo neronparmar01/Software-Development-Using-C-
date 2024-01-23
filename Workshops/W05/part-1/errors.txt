@@ -1,0 +1,7 @@
+w5_p1.cpp: In lambda function:
+w5_p1.cpp:67:56: error: ‘round’ is not a member of ‘std’
+   67 |                                 double newPrice = std::round(book.price() * usdToCadRate * 100.0) / 100.0;
+      |                                                        ^~~~~
+w5_p1.cpp:72:56: error: ‘round’ is not a member of ‘std’
+   72 |                                 double newPrice = std::round(book.price() * gbpToCadRate * 100.0) / 100.0;
+      |                                                        ^~~~~
