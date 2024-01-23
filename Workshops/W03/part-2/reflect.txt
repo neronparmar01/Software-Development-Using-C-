@@ -1,0 +1,14 @@
+// Workshop 3 - Templates
+// Created by: Jeevan Pant
+// Date created: 2023/07/22
+/* Name       : Neron Parmar
+*  Student ID : 171690217
+*  File       : reflect.txt
+*  Date       : 10/1/23
+*  All the work is done by me and none of the part or none of the file is shared to anyone or
+*  no part is copied and enitre workshop is done by my own.
+*/
+
+In this workshop 3, there were total 2 parts. The first part was the base of the second one. In this workshop i was mainly asked to work on the templates. This was found a bit tougher for
+me fomr the previous workshop. The most of the time was consumed by the part one as it was the first thing in this workshop that was supposed to be created using the templates. However, it took me very long to code and solve errors of the Collection module as it had completely based on working with templates. However, talking about few things that  Class objects are defined outside the class definition to allocate memory for them separately, allowing each instance of the class to have its own unique set of attributes. It also makes the class definition cleaner and more organized. Moreover, the reason for specializing the definition of m_smallestItem and m_largestItem objects for Book and 10 is that It allows the class to handle Book objects differently from other data types. The initilization of m_smallestItem and m_largestItem for Book and 72 is because it sets defaults values at initials when an instance is created with different capacity. However, talking about my experiences about this workshop is that i learnt that i should be very very careful with the braces and small things such as colons and other small things that is very very minor but means a lot in code which can bring errors in my code, as i had lot of issues that i used to forget keeping the semi colons and other similar signs 
+as i was getting confused in due to fear of templates.
