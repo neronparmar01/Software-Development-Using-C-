@@ -1,0 +1,15 @@
+// Workshop 2 - Summer 2023
+// w2_p1.cpp
+// Rania Arbash
+// Name : Neron Parmar
+// Date : 9/24/23
+// File : reflect.txt
+// All of the coding done is my work and no work of mine is shared to anyone or on any page
+
+In this workshop 2, there were total 2 parts and in this workshop i learnt many things and came up with lots of mistake i make while doing the workshop as well as solving the errors.
+However, the first part of this workshop felt very easy. Yet, there was a minor error that i faced in the first part, it was that the csv file wasn't being read properly and due to that
+i didn't got the correct output. However, at the end i found the issue and it was that i was using file.ignore() thrice in my code and due to that it was clearling and skiping some datas
+which led to not getting proper ouput. After, i found the issue i removed the extra part which was causing an issue. And after that i was able to get the correct outupt which was needed. Similarly talking about the part2 of this workshop, in this part i came to know about the move constructor, move assignment operator, copy constructor, copy assignment operator and the destructor which i also known as the rule of 5. However, the issue i faced in this workshop was in the Timer.cpp file which was repeatedly rejecting the submission. After, trying to submit several times, i thought to go through the errors.txt file once. So, i gone through that file and found that there was issue in the Timer.cpp file in the void start() function as there was
+no match for the assignment operator found, because i had used keyword high_resolution_clock instead of the steady_clock. And as the high_resolution_clock doesn't have constant tick rate, 
+so i had made change with the steady_clock which had constant tick rate. After, compiliing my code ran through and was successful and all the errors were solved. However, the most important
+things that i learnt from this workshop are that always copy the data or get data file read properly and learnt about move constructor and move assignment. 

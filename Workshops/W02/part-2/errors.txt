@@ -1,0 +1,12 @@
+Timer.cpp: In member function ‘void sdds::Timer::start()’:
+Timer.cpp:14:47: error: no match for ‘operator=’ (operand types are ‘std::chrono::_V2::steady_clock::time_point’ {aka ‘std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >’} and ‘std::chrono::_V2::system_clock::time_point’ {aka ‘std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >’})
+   14 |   s_time = chrono::high_resolution_clock::now();
+      |                                               ^
+In file included from Timer.h:12,
+                 from Timer.cpp:10:
+/usr/local/gcc/10.2.0/include/c++/10.2.0/chrono:762:14: note: candidate: ‘constexpr std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >& std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >::operator=(const std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >&)’
+  762 |       struct time_point
+      |              ^~~~~~~~~~
+/usr/local/gcc/10.2.0/include/c++/10.2.0/chrono:762:14: note:   no known conversion for argument 1 from ‘std::chrono::_V2::system_clock::time_point’ {aka ‘std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >’} to ‘const std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >&’
+/usr/local/gcc/10.2.0/include/c++/10.2.0/chrono:762:14: note: candidate: ‘constexpr std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >& std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >::operator=(std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >&&)’
+/usr/local/gcc/10.2.0/include/c++/10.2.0/chrono:762:14: note:   no known conversion for argument 1 from ‘std::chrono::_V2::system_clock::time_point’ {aka ‘std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >’} to ‘std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> > >&&’
