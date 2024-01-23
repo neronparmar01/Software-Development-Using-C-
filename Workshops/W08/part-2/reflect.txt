@@ -1,0 +1,18 @@
+// Workshop 8 - Smart Pointers
+// 2019/11 - Cornel
+// Name : Neron Parmar
+// Student ID : 171690217
+// File : reflect.txt
+// Date : 11/18/23
+// All the work in the workshop is done by my own and no part of my workshop is copied or shared with anyone
+
+In this workshop 8, this workshop was basically divided into two parts. The first one was the part1 and the another one was the part2. In the first part
+i was given three data file that is suppose to be read. The name of those file is AllProfile.txt, GoodProfile.txt and BadProfile.txt. This data was to be presented
+in the three terms the database of all the profiles then good and bad profiles. However, in this workshop i was introduced to a very new topic that is smart pointers.
+In this i had not much thing to do, but had to deal with the smart pointers and raw pointers and using them in the code. However, in the first part i had to deal with 
+the raw pointer and had to initialize only += operator in the database.h file as the rest of the file was already implemented. Similarly was with the Profile.h file 
+that it was fully implemented had had to only initialize and implement the validate function only. Moreover, i also had to do the Utilities modulde which had the collection
+of all the profiles. Also talking about the second part, it was also not having much to do but had to deal with the smart pointers. The smart pointer was suppose to be initialized 
+in the DataBase.h file right after the initilization of the raw pointers. And the another thing that was suppose to be initialized was excludeSmart function. The excludeSmart function
+was same as excludeRaw function the only difference was that the excludeRaw function was suppose to be done using the raw pointers and the excludeSmart function was suppose to be done 
+using the smart pointers.
