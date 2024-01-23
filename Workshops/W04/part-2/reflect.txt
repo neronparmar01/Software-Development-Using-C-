@@ -1,0 +1,10 @@
+/*
+Name       : Neron Parmar
+Student Id : 171690217
+File       : reflect.txt
+Date       : 10/7/23
+
+I have done the entire workshop by my own and no part of my workshop has been shared.
+*/
+
+In this workshop 4, i was given two parts to do. The first part was the base of the second one. Yet, in the first part wasn't that hard to complete as it was the basic one. However, the main thing or the challenging thing i found in it was that the first part's data file was not having the data trimmed or filtered. Therefore, the output which was needed wasn't getting. So, i had to make a function called trim to clear the spaces and filter the data. Later, after doing this i was getting the output that was needed or i was asked to get. Later on, in the second part i found that it was too difficult to do. As in this part the most complicated thing was that in this part the cheese was not being able to remove and therefore later i found that that i was not properly implementing the logic. And due to this there were issue created. Thus, i corrected the error later and was able to get the issues fixed.

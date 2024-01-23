@@ -1,0 +1,10 @@
+CheeseParty.cpp:154:14: warning: ‘std::ostream& sdds::operator<<(std::ostream&, const CheeseParty&)’ has not been declared within ‘sdds’
+  154 |     ostream& sdds::operator<<(ostream& os, const CheeseParty& party) {
+      |              ^~~~
+In file included from CheeseParty.cpp:11:
+CheeseParty.h:36:30: note: only here as a ‘friend’
+   36 |         friend std::ostream& operator<<(std::ostream& os, const CheeseParty& party);
+      |                              ^~~~~~~~
+CheeseParty.cpp:154:14: error: explicit qualification in declaration of ‘std::ostream& sdds::operator<<(std::ostream&, const CheeseParty&)’
+  154 |     ostream& sdds::operator<<(ostream& os, const CheeseParty& party) {
+      |              ^~~~
