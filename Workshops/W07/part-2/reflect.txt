@@ -1,0 +1,13 @@
+// Name : Neron Parmar
+// Student ID : 171690217
+// File : reflect.txt
+// Date : 11/12/23
+// All the work of the workshop is done by my own and no part of workshop is copied or not part of my work is shared.
+
+In this workshop 7, as previous workshops this workshop was also divided into two parts the first one was part 1 and second one was part2. In this workshop we were given 
+data of the covid and it cases in coutries and all to deal with. In the first part it was quite easy to do the only thing to take care was the reading of the file properly.
+However, in the first part there are total 4 member function implemented. The first was the trim funstion the next was the file readin function called CovidCollection(char* filename file) and then the third was void display and the last was the operator fucntion of output. Yet, talking about the first part the main thing i messed up was with the reading of the file. In that 
+i had not checked the condition to not the end of the file and because of that i was not getting the data read properly. However, after inclulding the eof i was able to fix the error 
+and get the output correctly as desired. Moreover, talking about the second part, in this there were few updates to make in the CovidCollection file. The member function  that wa supposed to
+be updated was void display(std::ostream& out, const std::string& country) const and later there were few member function to be added in that file. The functions that were supposed to be added were void sort(const std::string& field), bool inCollection(const std::string& variant, const std::string& country, unsigned int deaths) const, std::list<Covid> CovidCollection::getListForDeaths(unsigned int deaths) const and void CovidCollection::updateStatus(). In this part it was quite tricky to do, as in this i was not allowed to use the manual
+looping so. The hard thing i found was the the void display function as it had all the things to display on and had to deal in with the total cases and the total deaths and case percent and death percent, later after doing all this things getting the output. However, after getting plenty of errors in that part i solved those errors too but wasn't able to get the desired output. As the updating status function was not perfectly done so i was not getting exact output of the program. So, after getting the update status function initiliazed in good way i was able to solve my issue of not getting exacg output and got the exact output. 
