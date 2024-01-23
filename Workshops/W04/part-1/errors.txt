@@ -1,0 +1,9 @@
+Cheese.cpp: In member function ‘std::string sdds::Cheese::trim(const std::string&) const’:
+Cheese.cpp:80:53: error: ‘find_if’ is not a member of ‘std’; did you mean ‘find’?
+   80 |                 trimmed.erase(trimmed.begin(), std::find_if(trimmed.begin(), trimmed.end(), [](int ch) {
+      |                                                     ^~~~~~~
+      |                                                     find
+Cheese.cpp:84:36: error: ‘find_if’ is not a member of ‘std’; did you mean ‘find’?
+   84 |                 trimmed.erase(std::find_if(trimmed.rbegin(), trimmed.rend(), [](int ch) {
+      |                                    ^~~~~~~
+      |                                    find
