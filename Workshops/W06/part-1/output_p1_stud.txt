@@ -1,0 +1,112 @@
+Script started on Wed 01 Nov 2023 06:41:56 PM EDT
+==164176== Memcheck, a memory error detector
+==164176== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==164176== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==164176== Command: ws
+==164176== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line:
+--------------------------
+  1: ws
+--------------------------
+
+--------------------------
+   DIRECTORY STRUCTURE
+--------------------------
+**EXPECTED EXCEPTION: flag.jpg image already exists in the root
+
+Directory structure created successfully
+--------------------------
+--------------------------
+      RESOURCE INFO
+--------------------------
+3   121 bytes /
+     42 bytes /scene.jpg
+     16 bytes /flag.jpg
+1    63 bytes /videos/
+     63 bytes /videos/harry-potter.webm
+--------------------------
+--------------------------
+           FIND
+--------------------------
+**EXPECTED ERROR: File .flag.jpg not found in /
+
+Found flag.jpg in / with the ALL flag
+
+**EXPECTED ERROR: File harry-potter.webm not found in / non-recursively
+
+Found harry-potter.webm in / recursively
+
+--------------------------
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==164176== 
+==164176== HEAP SUMMARY:
+==164176==     in use at exit: 571 bytes in 9 blocks
+==164176==   total heap usage: 30 allocs, 21 frees, 75,082 bytes allocated
+==164176== 
+==164176== 8 bytes in 1 blocks are indirectly lost in loss record 1 of 9
+==164176==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==164176==    by 0x406BDB: std::__new_allocator<sdds::Resource*>::allocate(unsigned long, void const*) (new_allocator.h:147)
+==164176==    by 0x4069AA: allocate (alloc_traits.h:482)
+==164176==    by 0x4069AA: std::_Vector_base<sdds::Resource*, std::allocator<sdds::Resource*> >::_M_allocate(unsigned long) (stl_vector.h:378)
+==164176==    by 0x406617: void std::vector<sdds::Resource*, std::allocator<sdds::Resource*> >::_M_realloc_insert<sdds::Resource* const&>(__gnu_cxx::__normal_iterator<sdds::Resource**, std::vector<sdds::Resource*, std::allocator<sdds::Resource*> > >, sdds::Resource* const&) (vector.tcc:459)
+==164176==    by 0x4063D3: std::vector<sdds::Resource*, std::allocator<sdds::Resource*> >::push_back(sdds::Resource* const&) (stl_vector.h:1289)
+==164176==    by 0x405943: sdds::Directory::operator+=(sdds::Resource*) (Directory.cpp:60)
+==164176==    by 0x402B40: main (w6_p1_prof.cpp:54)
+==164176== 
+==164176== 17 bytes in 1 blocks are indirectly lost in loss record 2 of 9
+==164176==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==164176==    by 0x4F81D2B: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (basic_string.tcc:225)
+==164176==    by 0x405067: sdds::File::File(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (File.cpp:12)
+==164176==    by 0x4028CA: main (w6_p1_prof.cpp:47)
+==164176== 
+==164176== 31 bytes in 1 blocks are indirectly lost in loss record 3 of 9
+==164176==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==164176==    by 0x4F7EFC1: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (basic_string.tcc:284)
+==164176==    by 0x4F7F428: assign (basic_string.h:1596)
+==164176==    by 0x4F7F428: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (basic_string.h:802)
+==164176==    by 0x40507E: sdds::File::File(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (File.cpp:13)
+==164176==    by 0x402AC5: main (w6_p1_prof.cpp:50)
+==164176== 
+==164176== 43 bytes in 1 blocks are indirectly lost in loss record 4 of 9
+==164176==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==164176==    by 0x4F81D2B: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (basic_string.tcc:225)
+==164176==    by 0x405067: sdds::File::File(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (File.cpp:12)
+==164176==    by 0x402809: main (w6_p1_prof.cpp:46)
+==164176== 
+==164176== 64 bytes in 1 blocks are indirectly lost in loss record 5 of 9
+==164176==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==164176==    by 0x4F81D2B: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (basic_string.tcc:225)
+==164176==    by 0x405067: sdds::File::File(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (File.cpp:12)
+==164176==    by 0x402AC5: main (w6_p1_prof.cpp:50)
+==164176== 
+==164176== 104 bytes in 1 blocks are indirectly lost in loss record 6 of 9
+==164176==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==164176==    by 0x402A4D: main (w6_p1_prof.cpp:50)
+==164176== 
+==164176== 121 (104 direct, 17 indirect) bytes in 1 blocks are definitely lost in loss record 7 of 9
+==164176==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==164176==    by 0x402855: main (w6_p1_prof.cpp:47)
+==164176== 
+==164176== 147 (104 direct, 43 indirect) bytes in 1 blocks are definitely lost in loss record 8 of 9
+==164176==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==164176==    by 0x402797: main (w6_p1_prof.cpp:46)
+==164176== 
+==164176== 303 (96 direct, 207 indirect) bytes in 1 blocks are definitely lost in loss record 9 of 9
+==164176==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==164176==    by 0x4029DA: main (w6_p1_prof.cpp:49)
+==164176== 
+==164176== LEAK SUMMARY:
+==164176==    definitely lost: 304 bytes in 3 blocks
+==164176==    indirectly lost: 267 bytes in 6 blocks
+==164176==      possibly lost: 0 bytes in 0 blocks
+==164176==    still reachable: 0 bytes in 0 blocks
+==164176==         suppressed: 0 bytes in 0 blocks
+==164176== 
+==164176== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+
+Script done on Wed 01 Nov 2023 06:41:57 PM EDT
