@@ -1,0 +1,7 @@
+Directory.cpp: In member function ‘void sdds::Directory::remove(const std::string&, const std::vector<sdds::OpFlags>&)’:
+Directory.cpp:99:17: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   99 |                 for (auto flag : flags)
+      |                 ^~~
+Directory.cpp:103:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  103 |                         Resource* result = find(name, flags);
+      |                         ^~~~~~~~

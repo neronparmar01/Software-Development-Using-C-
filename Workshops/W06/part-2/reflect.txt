@@ -1,0 +1,16 @@
+// Name: Neron Parmar
+// Student ID: 171690217
+// File: reflect.txt
+// Date: 11/5/23
+// All the work in the workshop and coding is done by my own and no part of my workshop is copied or shared to anyone.
+
+
+In this workshop, this workshop is divided into 2 parts the first one is the part 1 and second one is the part 2, in this workshop in the first part
+i found it quite easy but the main thing that i was struggling with was the <vector> lib functions. Especially the declaration of the m_contents in the directory 
+header file. However, that too was quite easy later on but after that only two things that i found tricky were the not allowing the copy constructor or copy assignment function 
+and the second one was the find function. Yet, i found my mistake that i was not initiating the lambda function properly and because of that i was getting error. Later in the second part
+of the workshop things got harder in the filesystem module. As it had fie to be read in it. So in that i had made many mistakes and due to that i was gettting progarm crashed while running
+as the file was not being read properly. So i figured out my mistake and corrected it in the first function itself of the program and later one while i was moving ahead the second mistake i 
+encoutered was that in the change directory function i was had forgot to write the return in the function that what is being returned in the end as i was way too confused in finding error. 
+However, i fixed all the errors later in my program and yes got my program completed and got the desired output. Moreover, in the program i learnt about the standard template library and 
+how it works.
