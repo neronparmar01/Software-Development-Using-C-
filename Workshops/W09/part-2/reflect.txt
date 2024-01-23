@@ -1,0 +1,10 @@
+// Name : Neron Parmar
+// Student ID : 171690217
+// File : reflect.txt
+// Date : 11/26/23
+// All the work in the workshop is done by my own and no part of the workshop is copied or shared with anyone.
+
+In this workshop 9, i was given two parts as usual. The first was part 1 and the second was part 2. In the first part there were three program files and one data file.
+The w9_p1.cpp and the process_data.h file was already implemented and provided. However, the implementation of the process_data.cpp file was supposed to be done as the file was 
+half supplied and rest part was suppose to be completed. The data 'data_int.dat' was in the binary form which was suppose to be read in binary form itself. In the process_data.cpp file
+i was suppose to implement the two fuctions out of them one was fully suppose to read the file. However, in the first part i learnt how to get the binary file read and performing some specific mathematical calculations in which data is already provided. Later, in the part 1 i also had learnt how to overload an operator and get the targeted file read and get opened for writing in binary itself. Moving furhter to the part second there was not much of changes to do. I had to deal with same functions processData and operator overload one. However, there were few enhancements suppose to be done in them. The enhancing of the operator overload fucntion was a challenging thing. However, in this function i was suppose to make some calculation of the average by multi threading and the variance by multi threading and inn this it had joining threads and binding of them.
